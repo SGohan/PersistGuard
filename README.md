@@ -1,5 +1,11 @@
 # PersistGuard
-PersistGuard is a golang program responsible for providing us persistence in Windows through RDP
+PersistGuard is a golang program responsible for providing us persistence in Windows through RDP.
+
+This program makes several functions:
+- Enable RDP.
+- Open firewall rule for RDP port.
+- Create a "support" user.
+- Create a scheduled task to execute the program every hour.
 
 **Usage**
 
