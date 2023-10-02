@@ -27,7 +27,7 @@ You have to open a CMD as administration privileges.
 
 Now you'll have to enter the path where you have the main.exe located (to kill the scheduled task),
 
-![image](https://github.com/a11cyberbull/PersistGuard/assets/103254517/c4f90633-d636-4128-a210-3f51c3234e37)
+![image](https://github.com/a11cyberbull/PersistGuard/assets/103254517/ca1eb723-c3e8-40b0-87df-5bac9f3d12d7)
 
 Done! 
 
