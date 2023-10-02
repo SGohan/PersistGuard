@@ -72,7 +72,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Println("User 'support' created")
+	fmt.Println("User 'support' created with password 'P@ssw0rd!'")
 }
 
 // function to create user
