@@ -14,16 +14,10 @@ const taskName = "support"
 
 func main() {
 	// Ask the user for the script path
-	scriptPath := getUserInput("Enter the full path of the program (including the executable name): ")
-
-	// Ask the user for the admin group name
-	adminGroup := getUserInput("Enter the name of the admin group: ")
-
-	// Ask the user for the RDP group name
-	rdpGroup := getUserInput("Enter the name of the RDP group: ")
+	scriptPath := getUserInput("Enter the full path of the program (including the name of the executable): ")
 
 	// Revert the process
-	err := revertProcess(scriptPath, adminGroup, rdpGroup)
+	err := revertProcess(scriptPath)
 	if err != nil {
 		fmt.Printf("Error reverting the process: %v\n", err)
 		os.Exit(1)
@@ -99,7 +93,7 @@ func extractPort(regOutput string) string {
 }
 
 // Function to revert the process
-func revertProcess(scriptPath, adminGroup, rdpGroup string) error {
+func revertProcess(scriptPath string) error {
 	// Kill the scheduled task
 	err := killScheduledTask()
 	if err != nil {
